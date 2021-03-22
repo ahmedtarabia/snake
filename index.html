@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> &#128013; Snake Game</title>
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      margin: 0;
+      background-color: black;
+    }
+    #credit {
+      background-color: white;
+      width: 30vmin;
+      height: 100vmin;
+      
+
+    }
+    #game-grid {
+      background-color: lightsteelblue;
+      /* To always have a square screen when ever screen size changes. */
+      width: 100vmin; 
+      height: 100vmin;
+      display: grid;
+      /* 21 x 21 grid where the game will take place */
+      grid-template-rows: repeat(21, 1fr);
+      grid-template-columns: repeat(21, 1fr);
+    }
+
+    .snake {
+      background-color:darkblue;
+      border: .25vmin solid black;
+    }
+
+    .apple {
+      background-color:hsl(0, 100%, 50%);
+      border: .25vmin solid black
+    }
+  </style>
+</head>
+  <script src="js/main.js" type="module"></script>
+<body>
+  <div id="credit">
+    <h1>Hi there! <br> <br>
+      Feed the blue python and don't run into yourself / walls.
+      
+    </h1>
+  </div>
+  <div id="game-grid"></div>
+</body>
+</html>
