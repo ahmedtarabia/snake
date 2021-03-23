@@ -3,7 +3,7 @@
 
 **Link to project:** https://bluepython.netlify.app/
 
-![alt tag]()
+![alt tag](https://github.com/ahmedtarabia/snake/blob/main/images/snake.png)
 
 ## How It's Made:
 
